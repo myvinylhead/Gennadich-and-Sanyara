@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Все уровни</title>
+<style>
+  :root { --bg: #0b0824; --card: #171236; --ink: #e2e4f0; --dim: #a8acc4; --acc: #b4ff5a; --line: #2a2448; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 -apple-system, system-ui, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  p.lead { color: var(--dim); margin: 0 0 8px; }
+  nav.top { margin: 0 0 20px; }
+  nav.top a { background: #8cf2ff; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 0 0 12px; }
+  h2 { font-size: 17px; margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  h2 .num { color: var(--acc); font-variant-numeric: tabular-nums; }
+  .sub { color: var(--dim); font-size: 13px; letter-spacing: 0.04em; margin: 2px 0 6px; }
+  .tag { font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 99px; border: 1px solid; }
+  .tag.boss { color: #ff7a6a; border-color: #ff7a6a; }
+  .tag.genre { color: #8cf2ff; border-color: #8cf2ff; }
+  .tag.new { color: #ffd84a; border-color: #ffd84a; }
+  .links { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  a { color: var(--bg); background: var(--acc); text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 14px; }
+  a.alt { background: #8cf2ff; }
+  a.god { background: #ffd84a; }
+  ul { margin: 6px 0 0; padding-left: 20px; color: var(--dim); }
+  li b { color: var(--ink); font-weight: 600; }
+  code { background: #0b0824; padding: 1px 5px; border-radius: 4px; color: var(--acc); }
+  h3 { font-size: 15px; margin: 24px 0 8px; color: var(--dim); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--dim); font-weight: 600; }
+  .scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Геннадич и Саняра: все уровни</h1>
+  <p class="lead">Все этапы игры по порядку. Кнопки открывают нужный уровень сразу. Зелёные — с комиксом перед этапом,
+    голубые — без комикса, другим героем или в коопе, жёлтые — с бессмертием (чтобы спокойно посмотреть весь уровень).</p>
+  <nav class="top links">
+    <a href="index.html">Игра с начала</a>
+    <a href="ТЕСТ.html">Что протестить сейчас</a>
+  </nav>
+
+  <h3>Мир 1. Нейропланета</h3>
+
+  <section>
+    <h2><span class="num">1</span> Посадочная страница</h2>
+    <div class="sub">НЕЙРОПЛАНЕТА-1</div>
+    <div class="links">
+      <a href="index.html?level=1&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?level=1&hero=sanyara&nostory=1">Саняра, без комикса</a>
+      <a class="alt" href="index.html?level=1&hero=gennadich&coop=1&hero2=sanyara&nostory=1">Кооп</a>
+      <a class="god" href="index.html?level=1&hero=gennadich&nostory=1&god=1">С бессмертием</a>
+    </div>
+    <ul>
+      <li>Обучение: бег, прыжки, стрельба во все стороны, полки, с которых можно спрыгнуть (вниз + прыжок).</li>
+      <li>Первое хрючево, шипы, летучие враги, яма со слизью, руины с гранатомётчиком.</li>
+      <li>Кофе, секретная пещера, спящее хрючево, артефакт и портал.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Попап-мегаполис</h2>
+    <div class="sub">ПРИНЯТЬ ВСЕ COOKIES?</div>
+    <div class="links">
+      <a href="index.html?level=2&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?level=2&hero=sanyara&nostory=1">Саняра, без комикса</a>
+      <a class="alt" href="index.html?level=2&hero=sanyara&coop=1&hero2=gennadich&nostory=1">Кооп</a>
+      <a class="god" href="index.html?level=2&hero=yurich&nostory=1&god=1">Юрич, с бессмертием</a>
+    </div>
+    <ul>
+      <li>Крыши небоскрёбов, мосты из глитч-блоков над пропастью.</li>
+      <li>Окна-попапы — бей по крестику [X]; Петушня.</li>
+      <li>Ящик с <b>Клод-мехом</b>: залезь и разнеси толпу.</li>
+      <li>Подъём по фасаду, тайная комната с золотой кошкой, артефакт.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Гонка по CDN <span class="tag genre">гонка</span></h2>
+    <div class="sub">ДОСТАВКА ЗА 404 МИЛЛИСЕКУНДЫ</div>
+    <div class="links">
+      <a href="index.html?cdn=1&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?cdn=1&hero=yurich&nostory=1">Юрич, без комикса</a>
+      <a class="alt" href="index.html?cdn=1&hero=sanyara&coop=1&hero2=gennadich&nostory=1">Кооп</a>
+      <a class="god" href="index.html?cdn=1&hero=gennadich&nostory=1&god=1">С бессмертием</a>
+    </div>
+    <ul>
+      <li>Слева наступает <b>стена «404»</b> — останавливаться нельзя.</li>
+      <li>Ускорители, батуты, две развилки (верхом по рельсу или низом через провалы).</li>
+      <li>Канал битых данных на платформах, стойки серверов, тайник с кошкой, финишная прямая к порталу.</li>
+    </ul>
+  </section>
+
+  <h3>Мир 2. Студия SUNO</h3>
+
+  <section>
+    <h2><span class="num">4</span> Студия SUNO <span class="tag genre">ритм</span></h2>
+    <div class="sub">ХРЮЧЕВО ГЕНЕРИТ ХИТЫ</div>
+    <div class="links">
+      <a href="index.html?suno=1&hero=gennadich">Уровень + дуэль</a>
+      <a class="alt" href="index.html?suno=1&hero=sanyara&coop=1&hero2=yurich&nostory=1">Кооп</a>
+      <a class="god" href="index.html?suno=1&hero=gennadich&nostory=1&god=1">С бессмертием</a>
+    </div>
+    <ul>
+      <li>Ритм-платформер: всё живёт в такт музыке. <b>Эквалайзеры</b> подпрыгивают на каждую долю,
+        <b>сабвуферы</b> подбрасывают на сильную долю, <b>лазеры-метрономы</b> бьют на 2-ю и 4-ю.</li>
+      <li>Враги: фальшивая нота, автотюн-хрючево (повторяет за тобой), Копирайт-бот со страйками, мьют-призрак глушит музыку.</li>
+      <li>В конце — дверь на сцену и гитар-дуэль.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">4½</span> Гитар-дуэль с Копирайт-ботом <span class="tag genre">Guitar Hero</span></h2>
+    <div class="sub">ФИНАЛ СТУДИИ SUNO</div>
+    <div class="links">
+      <a class="alt" href="index.html?duel=1&hero=sanyara">Сразу дуэль</a>
+      <a class="alt" href="index.html?duel=1&hero=gennadich&coop=1&hero2=yurich">Дуэль в коопе</a>
+    </div>
+    <ul>
+      <li>Клавиши <code>D F J K</code> или стрелки; в коопе <code>A S</code> у первого и <code>K L</code> у второго.</li>
+      <li>Попадания снимают у бота «права на трек», промахи злят толпу. Красные ноты CLAIM — отбить.</li>
+      <li>«Звёздная сила» — <code>V</code>, когда полный командный метр. Дотянул до конца песни — победа.</li>
+    </ul>
+  </section>
+
+  <h3>Мир 3. Пицца-вселенная</h3>
+
+  <section>
+    <h2><span class="num">5</span> Пицца-вселенная</h2>
+    <div class="sub">ЧЕТЫРЕ СЫРА И НИ ОДНОГО АНАНАСА</div>
+    <div class="links">
+      <a href="index.html?pizza=1&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?pizza=1&hero=sanyara&coop=1&hero2=yurich&nostory=1">Кооп</a>
+      <a class="god" href="index.html?pizza=1&hero=gennadich&nostory=1&god=1">С бессмертием</a>
+    </div>
+    <ul>
+      <li><b>Колесо пиццы</b> — куски-платформы катают по кругу, как колесо обозрения.</li>
+      <li><b>Сырные мосты</b> над томатным соусом: постоял — сыр тянется и рвётся. Пепперони-пила.</li>
+      <li><b>Печной жар</b> поднимает на башню из коробок; тайник с кошкой над вторым колесом.</li>
+      <li>Враги: ананас-еретик, оливки-дроны, сырный слайм (делится на два), курьер-хрючево на мопеде.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Пицца 4 сыра апокалипсиса <span class="tag boss">босс</span></h2>
+    <div class="sub">БОСС ПИЦЦА-ВСЕЛЕННОЙ</div>
+    <div class="links">
+      <a href="index.html?pizzaboss=1&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?pizzaboss=1&hero=sanyara&coop=1&hero2=gennadich&nostory=1">Кооп</a>
+      <a class="god" href="index.html?pizzaboss=1&hero=yurich&nostory=1&god=1">Юрич, с бессмертием</a>
+    </div>
+    <ul>
+      <li>Огромная крутящаяся пицца: каждый выбитый кусок летит в героя, из каждого второго выпадает лечебная пицца.</li>
+      <li>Атаки: спираль оливок, сырный дождь, навесные броски, удар об пол в 3-й фазе.</li>
+      <li>Фазы: разгон → сырный дождь → «ананасовая ересь», крутится в обратную сторону.</li>
+    </ul>
+  </section>
+
+  <h3>Мир 4. Собор Святого Покока</h3>
+
+  <section>
+    <h2><span class="num">7</span> Церковь Святого Покока</h2>
+    <div class="sub">ПРОМПТ НАШ НАСУЩНЫЙ</div>
+    <div class="links">
+      <a href="index.html?church=1&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?church=1&hero=sanyara&coop=1&hero2=gennadich&nostory=1">Кооп</a>
+      <a class="god" href="index.html?church=1&hero=gennadich&nostory=1&god=1">С бессмертием</a>
+    </div>
+    <ul>
+      <li><b>Контекстные окна</b>: со всех сторон сходятся стены текста; сбей колонны «САММАРИ», чтобы раздвинуть их (/compact).</li>
+      <li><b>Реликвии-скиллы</b> на 10 секунд: TDD — щит, CAVEMAN — двойной урон, DIAGNOSE — враги получают ×1.5.</li>
+      <li>Враги: фанатик промптов со свитками, аколит AGENTS.MD со скрижалью (бить в спину), монах-токенизатор,
+        хор системного промпта (баффает соседей), инквизитор «grill-me» с вопросами.</li>
+      <li>Исповедальни-чекпоинты, подъём по балконам к кошке.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span> Архиепископ системного промпта <span class="tag boss">босс</span></h2>
+    <div class="sub">БОСС СОБОРА</div>
+    <div class="links">
+      <a href="index.html?churchboss=1&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?churchboss=1&hero=sanyara&coop=1&hero2=gennadich&nostory=1">Кооп</a>
+      <a class="god" href="index.html?churchboss=1&hero=sanyara&nostory=1&god=1">Саняра, с бессмертием</a>
+    </div>
+    <ul>
+      <li>Огромный свиток AGENTS.md в митре. Бьёт словами: <b>NEVER</b> — веером, <b>ALWAYS</b> — самонаводящееся,
+        <b>IMPORTANT!!!</b> — дождь восклицаний, <b>YOU MUST</b> — луч поперёк арены.</li>
+      <li>Слабое место — сургучная печать снизу. Балконы по бокам — уйти с линии луча.</li>
+    </ul>
+  </section>
+
+  <h3>Финал. Ядро нейросети</h3>
+
+  <section>
+    <h2><span class="num">9</span> Орбитальный скролл <span class="tag genre">шмап</span></h2>
+    <div class="sub">ЛЕТЯТ СПАСАТЬ ПРОДАКШН</div>
+    <div class="links">
+      <a href="index.html?space=1&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?space=1&hero=sanyara&nostory=1">Саняра, без комикса</a>
+      <a class="alt" href="index.html?space=1&hero=sanyara&coop=1&hero2=gennadich&nostory=1">Кооп</a>
+      <a class="god" href="index.html?space=1&hero=gennadich&nostory=1&god=1">С бессмертием</a>
+    </div>
+    <ul>
+      <li>Вертикальный шмап на кораблях: летим снизу вверх к Ядру нейросети.</li>
+      <li>Волны летунов и пикировщиков, метеоритный дождь, турели, попапы, глитчи, Петушня.</li>
+      <li>Кофе, пицца и кристаллы по пути, в конце — босс волны.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span> Ядро нейросети <span class="tag boss">финальный босс</span></h2>
+    <div class="sub">БОСС: ОПОССУМ-МАКС</div>
+    <div class="links">
+      <a href="index.html?boss=1&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?boss=1&hero=sanyara&coop=1&hero2=gennadich&nostory=1">Кооп</a>
+      <a class="god" href="index.html?boss=1&hero=yurich&nostory=1&god=1">Юрич, с бессмертием</a>
+    </div>
+    <ul>
+      <li>Опоссум-Макс, «Ошибка генерации», в три фазы: таран и прыжки → попапы и глитчи → лазеры и обломки.</li>
+      <li>После победы — финальные титры с темой «Геннадич и Саняра».</li>
+    </ul>
+  </section>
+
+  <h3>Справка</h3>
+
+  <section>
+    <h2>Управление</h2>
+    <div class="scroll">
+      <table>
+        <tr><th></th><th>Один игрок</th><th>Игрок 1 (кооп)</th><th>Игрок 2 (кооп)</th></tr>
+        <tr><td>Бег</td><td>← → или A D</td><td>A D</td><td>← →</td></tr>
+        <tr><td>Прицел вверх / вниз</td><td>↑ ↓ или W S</td><td>W S</td><td>↑ ↓</td></tr>
+        <tr><td>Прыжок</td><td>Z, Пробел</td><td>G, Пробел</td><td>K</td></tr>
+        <tr><td>Огонь</td><td>X</td><td>F</td><td>J</td></tr>
+        <tr><td>Спецприём</td><td>C</td><td>H</td><td>L</td></tr>
+        <tr><td>Суперудар</td><td>V</td><td>R</td><td>U</td></tr>
+      </table>
+    </div>
+    <ul>
+      <li>Вниз + прыжок — спрыгнуть с полки. Esc / P — пауза, M — звук.</li>
+      <li><b>Геннадич</b> — скорострельный код-бластер, рывок с неуязвимостью. Без двойного прыжка.</li>
+      <li><b>Саняра</b> — пиксель-бластер с зарядом, платформа-сетка и второй прыжок.</li>
+      <li><b>Юрич</b> — красный лазер и катана; открывается за 3 золотые кошки или прохождение.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Музыка</h2>
+    <div class="links">
+      <a class="alt" href="index.html?music=theme">Тема игры</a>
+      <a class="alt" href="index.html?music=level1">Уровень 1</a>
+      <a class="alt" href="index.html?music=level2">Уровень 2</a>
+      <a class="alt" href="index.html?music=cdn">CDN</a>
+      <a class="alt" href="index.html?music=suno">SUNO</a>
+      <a class="alt" href="index.html?music=pizza">Пицца</a>
+      <a class="alt" href="index.html?music=pizzaBoss">Босс-пицца</a>
+      <a class="alt" href="index.html?music=church">Собор</a>
+      <a class="alt" href="index.html?music=churchBoss">Архиепископ</a>
+      <a class="alt" href="index.html?music=space">Космос</a>
+      <a class="alt" href="index.html?music=boss">Опоссум</a>
+      <a class="alt" href="index.html?music=ending">Титры</a>
+    </div>
+    <ul>
+      <li>Трек играет на титуле; звук включится после первого нажатия любой клавиши.</li>
+      <li>Все треки в mp3 лежат в папке <code>Музыка</code>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Параметры ссылок</h2>
+    <ul>
+      <li>Этап: <code>level=1…10</code> или имя — <code>cdn</code>, <code>suno</code>, <code>duel</code>, <code>pizza</code>,
+        <code>pizzaboss</code>, <code>church</code>, <code>churchboss</code>, <code>space</code>, <code>boss</code>.</li>
+      <li><code>hero=gennadich</code> / <code>sanyara</code> / <code>yurich</code> — герой;
+        <code>coop=1&amp;hero2=…</code> — второй игрок.</li>
+      <li><code>nostory=1</code> — без комикса; <code>god=1</code> — бессмертие; <code>music=имя</code> — трек на титуле.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

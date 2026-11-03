@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тест уровней</title>
+<style>
+  :root { --bg: #0b0824; --card: #171236; --ink: #e2e4f0; --dim: #a8acc4; --acc: #b4ff5a; --line: #2a2448; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 -apple-system, system-ui, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  p.lead { color: var(--dim); margin: 0 0 20px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 0 0 12px; }
+  h2 { font-size: 17px; margin: 0 0 6px; }
+  .links { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  a { color: var(--bg); background: var(--acc); text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 14px; }
+  a.alt { background: #8cf2ff; }
+  a.god { background: #ffd84a; }
+  ul { margin: 6px 0 0; padding-left: 20px; color: var(--dim); }
+  code { background: #0b0824; padding: 1px 5px; border-radius: 4px; color: var(--acc); }
+  .params li { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Что протестить</h1>
+  <p class="lead">Кнопки сразу открывают нужный уровень. Зелёные — с комиксом, голубые — без комикса,
+    другим героем или в коопе, жёлтые — с бессмертием (чтобы просто посмотреть уровень целиком).</p>
+  <div class="links" style="margin: 0 0 20px"><a class="alt" href="УРОВНИ.html">Все уровни с описаниями</a></div>
+
+  <section>
+    <h2>3. Гонка по CDN</h2>
+    <div class="links">
+      <a href="index.html?cdn=1&hero=gennadich">Геннадич</a>
+      <a class="alt" href="index.html?cdn=1&hero=yurich&nostory=1">Юрич, без комикса</a>
+      <a class="alt" href="index.html?cdn=1&hero=sanyara&coop=1&hero2=gennadich&nostory=1">Кооп</a>
+    </div>
+    <ul>
+      <li>Темп стены «404»: давит или слишком легко? Пинг сверху понятен?</li>
+      <li>Батуты (подброс после фикса), ускорители, развилки, платформы над каналом.</li>
+      <li>Новая музыка трека — нравится ли.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Студия SUNO + гитар-дуэль</h2>
+    <div class="links">
+      <a href="index.html?suno=1&hero=gennadich">Уровень + дуэль</a>
+      <a class="alt" href="index.html?duel=1&hero=sanyara">Сразу дуэль</a>
+      <a class="alt" href="index.html?duel=1&hero=gennadich&coop=1&hero2=yurich">Дуэль в коопе</a>
+    </div>
+    <ul>
+      <li>Ритм-платформер: эквалайзеры, сабвуферы, лазеры — попадают ли в такт музыки на слух.</li>
+      <li>Дуэль: клавиши <code>D F J K</code> / стрелки (в коопе <code>A S</code> и <code>K L</code>), ноты совпадают со звуком?
+        Сложность, длина песни, «звёздная сила» (<code>V</code>).</li>
+      <li>Нарисованные враги, Копирайт-бот, барабанщик, гитары.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5–6. Пицца-вселенная + босс «Пицца 4 сыра»</h2>
+    <div class="links">
+      <a href="index.html?pizza=1&hero=gennadich">Уровень</a>
+      <a class="alt" href="index.html?pizza=1&hero=sanyara&coop=1&hero2=yurich&nostory=1">Уровень, кооп</a>
+      <a href="index.html?pizzaboss=1&hero=gennadich">Босс</a>
+      <a class="god" href="index.html?pizzaboss=1&hero=yurich&nostory=1&god=1">Босс с бессмертием</a>
+    </div>
+    <ul>
+      <li>Колесо пиццы: больше не дрожит и не дёргает героя? Удобно ли запрыгивать и спрыгивать на полку?</li>
+      <li>Враги-топпинги стали вдвое-втрое крупнее — достаёшь выстрелом стоя?</li>
+      <li>Сырные мосты: держат дольше, между ними коробки-островки, пила одна и высоко, без оливок.
+        После смерти мосты сразу целые.</li>
+      <li>Печной жар у башни из коробок.</li>
+      <li>Босс сложнее: плавает по арене, веер залпов, поток оливок, кольцо с дырой, нож-колесо по полу (перепрыгнуть),
+        дождь над героем. Стоять на месте больше не выйдет — проверь, не перебор ли.</li>
+      <li>Музыка-тарантелла (уровень и босс).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7–8. Церковь Святого Покока + Архиепископ</h2>
+    <div class="links">
+      <a href="index.html?church=1&hero=gennadich">Уровень</a>
+      <a class="alt" href="index.html?church=1&hero=sanyara&coop=1&hero2=gennadich&nostory=1">Уровень, кооп</a>
+      <a href="index.html?churchboss=1&hero=gennadich">Босс</a>
+      <a class="god" href="index.html?churchboss=1&hero=sanyara&nostory=1&god=1">Босс с бессмертием</a>
+    </div>
+    <ul>
+      <li>Враги увеличены вдвое. Контекстные окна: стены не заходят на живые колонны «САММАРИ».
+        Высокие платформы опущены до досягаемых.</li>
+      <li>Реликвии TDD / CAVEMAN / DIAGNOSE — заметно ли действие, хватает ли 10 секунд.</li>
+      <li>Враги: аколит со скрижалью (бить в спину), токенизатор, хор, инквизитор с вопросами.</li>
+      <li>Босс: слова NEVER / ALWAYS / IMPORTANT!!! / луч YOU MUST, разворот свитка до пола.</li>
+      <li>Новый нарисованный арт: враги, колонны, исповедальни, три реликвии, тайлы, фон из витражей, органа и люстр,
+        кадры комикса. Новый Архиепископ: руки показывают атаку жестом, скрижали кружат, печать на груди — слабое место.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Музыка и меню</h2>
+    <div class="links">
+      <a href="index.html">Титул с новой темой</a>
+      <a class="alt" href="index.html?music=church">Послушать: собор</a>
+      <a class="alt" href="index.html?music=pizza">Пицца</a>
+      <a class="alt" href="index.html?music=suno">SUNO</a>
+      <a class="alt" href="index.html?music=cdn">CDN</a>
+    </div>
+    <ul>
+      <li>Кавер «Геннадич и Саняра» на титуле, выборе героя и в финальных титрах.</li>
+      <li>Чтобы звук пошёл, нажми любую клавишу на титуле — браузер не играет звук до первого нажатия.</li>
+      <li>Все треки mp3 лежат в папке <code>Музыка</code>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Параметры (можно дописывать к любой ссылке)</h2>
+    <ul class="params">
+      <li><code>hero=gennadich</code> / <code>sanyara</code> / <code>yurich</code> — герой;
+        <code>coop=1&amp;hero2=…</code> — второй игрок.</li>
+      <li><code>nostory=1</code> — без комикса; <code>god=1</code> — бессмертие.</li>
+      <li>Этапы: <code>cdn</code>, <code>suno</code>, <code>duel</code>, <code>pizza</code>, <code>pizzaboss</code>,
+        <code>church</code>, <code>churchboss</code>, <code>space</code>, <code>boss</code>, или номер — <code>level=4</code>.</li>
+      <li><code>music=имя</code> — трек на титуле: <code>theme</code>, <code>title</code>, <code>level1</code>, <code>level2</code>, <code>cdn</code>,
+        <code>suno</code>, <code>pizza</code>, <code>pizzaBoss</code>, <code>church</code>, <code>churchBoss</code>, <code>space</code>, <code>boss</code>, <code>ending</code>.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

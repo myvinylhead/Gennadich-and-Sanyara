@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Геннадич и Саняра: Нейросетевые приключения</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #07051a radial-gradient(ellipse at center, #1d1445 0%, #07051a 75%);
+      overflow: hidden;
+    }
+    #game {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    canvas {
+      display: block;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      box-shadow: 0 0 80px rgba(120, 80, 255, 0.25);
+    }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+
+  <!-- Без сборки и без сервера: обычные скрипты в фиксированном порядке (открывается двойным кликом). -->
+  <script src="vendor/phaser.min.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/tuning.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/data/lines.js"></script>
+  <script src="js/data/images.js"></script>
+  <script src="js/audio/synth.js"></script>
+  <script src="js/audio/music.js"></script>
+  <script src="js/art/pixel.js"></script>
+  <script src="js/art/font.js"></script>
+  <script src="js/art/heroes.js"></script>
+  <script src="js/art/heroSprites.js"></script>
+  <script src="js/art/enemies.js"></script>
+  <script src="js/art/items.js"></script>
+  <script src="js/art/tiles.js"></script>
+  <script src="js/art/background.js"></script>
+  <script src="js/rig/Skeleton.js"></script>
+  <script src="js/rig/clips.js"></script>
+  <script src="js/rig/rigs.js"></script>
+  <script src="js/rig/enemyRigs.js"></script>
+  <script src="js/fx/fx.js"></script>
+  <script src="js/fx/bubbles.js"></script>
+  <script src="js/fx/stickers.js"></script>
+  <script src="js/entities/Projectiles.js"></script>
+  <script src="js/entities/Player.js"></script>
+  <script src="js/entities/Pickups.js"></script>
+  <script src="js/entities/enemies.js"></script>
+  <script src="js/entities/Opossum.js"></script>
+  <script src="js/entities/Mech.js"></script>
+  <script src="js/entities/Race.js"></script>
+  <script src="js/entities/Rhythm.js"></script>
+  <script src="js/entities/Pizza.js"></script>
+  <script src="js/entities/Church.js"></script>
+  <script src="js/level/parse.js"></script>
+  <script src="js/level/level1.js"></script>
+  <script src="js/level/level2.js"></script>
+  <script src="js/level/cdn.js"></script>
+  <script src="js/level/suno.js"></script>
+  <script src="js/level/pizza.js"></script>
+  <script src="js/level/pizzaboss.js"></script>
+  <script src="js/level/church.js"></script>
+  <script src="js/level/churchboss.js"></script>
+  <script src="js/level/boss.js"></script>
+  <script src="js/level/space.js"></script>
+  <script src="js/scenes/BootScene.js"></script>
+  <script src="js/scenes/RigLabScene.js"></script>
+  <script src="js/scenes/TitleScene.js"></script>
+  <script src="js/scenes/SelectScene.js"></script>
+  <script src="js/scenes/StoryScene.js"></script>
+  <script src="js/scenes/LevelScene.js"></script>
+  <script src="js/scenes/ShmupScene.js"></script>
+  <script src="js/scenes/RhythmScene.js"></script>
+  <script src="js/scenes/HudScene.js"></script>
+  <script src="js/scenes/PauseScene.js"></script>
+  <script src="js/scenes/ResultsScene.js"></script>
+  <script src="js/scenes/EndingScene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
